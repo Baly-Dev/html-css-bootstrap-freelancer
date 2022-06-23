@@ -1,0 +1,43 @@
+/* Palette */
+:root{
+    --primary--dark: #2C3E50;
+    --primary-light: #3B546D;
+    --secondary: #1ABC9C;
+}
+
+/* generals */
+
+/* utilities */
+.bg_primary_dark{
+    background-color: var(--primary--dark);
+}
+
+.bg_primary_light{
+    background-color: var(--primary-light);
+}
+
+.bg_secondary{
+    background-color: var(--secondary);
+}
+
+.navbar-brand,
+.nav-link,
+.first_section h1{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.first_section img{
+    width: 130px;
+}
+
+.sep_line{
+    height: 3px;
+    background-color: #fff;
+    width: 13%;
+    display: inline-block;
+}
+
+.first_section p{
+    text-transform: uppercase;
+}
