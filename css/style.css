@@ -4,6 +4,7 @@
     --primary-light: #3B546D;
     --secondary: #1ABC9C;
     --secondary-dark: rgb(19, 175, 144);
+    --secondary-overlay: #1abc9c70;
 }
 
 /* generals */
@@ -14,6 +15,12 @@ img{
 button,
 a{
     cursor: pointer;
+}
+
+.sep_line{
+    height: 3px;
+    width: 13%;
+    display: inline-block;
 }
 
 /* removing default bbotstrap outline */
@@ -61,44 +68,52 @@ label:focus,
     background-color: var(--secondary);
 }
 
-/* custom style */
-.navbar-brand,
-.nav-link,
-.first_section h1,
-.second_section h2,
-.third_section h2,
-.fourth_section h2{
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
+/* header */
 a.nav-link:hover{
     color: var(--secondary) !important;
+}
+
+/* first section  */
+.first_section p{
+    text-transform: uppercase;
 }
 
 .first_section img{
     width: 150px;
 }
 
-.sep_line{
-    height: 3px;
-    width: 13%;
-    display: inline-block;
+/* second section  */
+.second_section .card{
+    cursor: pointer;
 }
 
-.first_section p{
-    text-transform: uppercase;
+.second_section .card .card-img-overlay{
+    display: none;
 }
 
-.social-item::before{
+.second_section .card:hover .card-img-overlay{
+    display: flex;
+}
+
+.card-img-overlay{
+    background-color: var(--secondary-overlay); 
+}
+
+/* fourth section  */
+.form-control:focus{
+    border-bottom: 1px solid var(--secondary) !important;
+}
+
+/* footer */
+.social i{
+    cursor: pointer;
+}
+
+.social i::before{
     border: 1px solid #fff;
     padding: 8px;
     border-radius: 50%;
     color: #fff;
-}
-
-.form-control:focus{
-    border-bottom: 1px solid var(--secondary) !important;
 }
 
 .ms_link{
