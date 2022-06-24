@@ -3,10 +3,30 @@
     --primary--dark: #2C3E50;
     --primary-light: #3B546D;
     --secondary: #1ABC9C;
+    --secondary-dark: rgb(19, 175, 144);
+
+    --white: (#fff);
 }
 
 /* generals */
+img{
+    width: 100%;
+}
 
+.btn_color_primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--secondary);
+    --bs-btn-border-color: var(--secondary);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--secondary);
+    --bs-btn-hover-bg: var(--secondary-dark);
+    --bs-btn-hover-border-color: var(--secondary-dark);
+    --bs-btn-focus-shadow-rgb: vvar(--secondary);
+    --bs-btn-active-color: var(--secondary);
+    --bs-btn-active-bg: var(--secondary);
+    --bs-btn-active-border-color:var(--white);
+}
 /* utilities */
 .bg_primary_dark{
     background-color: var(--primary--dark);
@@ -22,22 +42,35 @@
 
 .navbar-brand,
 .nav-link,
-.first_section h1{
+.first_section h1,
+.second_section h2,
+.third_section h2,
+.fourth_section h2{
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .first_section img{
-    width: 130px;
+    width: 150px;
 }
 
 .sep_line{
     height: 3px;
-    background-color: #fff;
     width: 13%;
     display: inline-block;
 }
 
 .first_section p{
     text-transform: uppercase;
+}
+
+.social-item::before{
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.ms_link{
+    color: var(--secondary)
 }
